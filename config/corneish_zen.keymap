@@ -43,7 +43,7 @@
 
             bindings = <
 &lt 3 ESC       &kp Q    &kp W               &kp E         &kp R        &kp T               &kp Y        &kp U                     &kp I      &kp O                &kp P                   &kp BSPC
-&mt LCTRL TAB   &lt 2 A  &mt LEFT_COMMAND S  &kp D         &kp F        &kp G               &kp H        &kp J                     &kp K      &mt RIGHT_COMMAND L  &mt RIGHT_CONTROL SEMI  &kp SQT
+&lt 3 TAB       &lt 2 A  &mt LEFT_COMMAND S  &kp D         &kp F        &kp G               &kp H        &kp J                     &kp K      &mt RIGHT_COMMAND L  &mt RIGHT_CONTROL SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z    &kp X               &kp C         &kp V        &kp B               &kp N        &kp M                     &kp COMMA  &kp DOT              &kp FSLH                &kp ESC
                                              &kp LEFT_ALT  &lt 1 SPACE  &lt 4 LEFT_SHIFT    &lt 4 ENTER  &mt LA(LEFT_SHIFT) SPACE  &kp RALT
             >;
@@ -68,10 +68,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &td0          &td0          &td0    &td0    &td0     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &none         &none         &none   &none   &none    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none   &none   &none    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans  &trans  &td0     &kp RET    &trans     &trans
+&trans  &td0          &td0            &td0        &td0       &td0      &kp CARET     &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR   &kp BSPC
+&trans  &none         &kp UNDERSCORE  &kp DOLLAR  &kp COLON  &kp AT    &kp ASTERISK  &kp MINUS  &kp PLUS   &kp SLASH  &kp EQUAL  &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE    &none       &none      &none     &kp UNDER     &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE   &kp TILDE
+                                      &trans      &trans     &td0      &kp RET       &trans     &trans
             >;
         };
 
@@ -97,7 +97,7 @@
             bindings = <
 &trans  &kp F1  &kp F2  &kp F3  &kp F4      &kp F5         &kp F6       &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
 &trans  &trans  &trans  &trans  &sys_reset  &bootloader    &bootloader  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &trans  &trans  &trans  &trans      &trans         &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
+&trans  &trans  &trans  &trans  &trans      &sys_reset     &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
                         &trans  &trans      &trans         &trans       &trans  &trans
             >;
         };
