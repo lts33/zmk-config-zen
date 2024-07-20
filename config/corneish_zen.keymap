@@ -28,10 +28,8 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
     };
-&mt {
-    tapping-term-ms = <400>;
-};
 
+    &mt { tapping-term-ms = <400>; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -72,7 +70,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &td0          &td0            &td0        &td0       &td0                        &kp CARET     &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR   &kp BSPC
+&trans  &td0          &td0            &td0        &td0       &td0                        &kp CARET     &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR   &td0
 &trans  &none         &kp UNDERSCORE  &kp DOLLAR  &kp COLON  &kp AT                      &kp ASTERISK  &kp MINUS  &kp PLUS   &kp SLASH  &kp EQUAL  &kp GRAVE
 &trans  &out OUT_USB  &out OUT_BLE    &none       &none      &none                       &kp UNDER     &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE   &kp TILDE
                                       &trans      &trans     &kp LC(LG(LS(NUMBER_4)))    &kp RET       &trans     &trans
